@@ -1,0 +1,91 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Airbnb Price Prediction</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Airbnb Price Prediction</legend>
+        </h1>
+		<div class="search">
+		<input name="City" type="text" class="searchTerm" placeholder="City">
+		</div>
+        <br>
+		<div class="search">
+        <input name="Price" type="text" class="searchTerm" placeholder="Price">
+        </div>
+		<br>
+		<div class="search">
+        <input name="Day" type="text" class="searchTerm" placeholder="Day">
+        </div>
+		<br>
+		<div class="search">
+		<input name="Room Type" type="text" class="searchTerm" placeholder="Room Type">
+		</div>
+		<br>
+		<div class="search">
+        <input name="Shared Room" type="text" class="searchTerm" placeholder="Shared Room">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Private Room" type="text" class="searchTerm" placeholder="Private Room">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Person Capacity" type="text" class="searchTerm" placeholder="Person Capacity">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Superhost" type="text" class="searchTerm" placeholder="Superhost">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Multiple Rooms" type="text" class="searchTerm" placeholder="Multiple Rooms">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Business" type="text" class="searchTerm" placeholder="Business">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Cleanliness Rating" type="text" class="searchTerm" placeholder="Cleanliness Rating">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Guest Satisfaction" type="text" class="searchTerm" placeholder="Guest Satisfaction">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Bedrooms" type="text" class="searchTerm" placeholder="Bedrooms">
+        </div>
+        <br>
+		<div class="search">
+        <input name="City Center (km)" type="text" class="searchTerm" placeholder="City Center (km)">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Metro Distance (km)" type="text" class="searchTerm" placeholder="Metro Distance (km)">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Attraction Index" type="text" class="searchTerm" placeholder="Attraction Index">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Normalised Attraction Index" type="text" class="searchTerm" placeholder="Normalised Attraction Index">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Restraunt Index" type="text" class="searchTerm" placeholder="Restraunt Index">
+        </div>
+        <br>
+		<div class="search">
+        <input name="Normalised Restraunt Index" type="text" class="searchTerm" placeholder="Normalised Restraunt Index">
+        </div>
+        <br>
+    </form>
+    <h2>
+       The  prediction result will be {{results}}
+    </h2>
+   <body>
+</html>
